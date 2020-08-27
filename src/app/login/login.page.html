@@ -1,0 +1,35 @@
+<ion-header no-border>
+    <div class="login-header ion-padding" >
+        <img class="logo-img" src="assets/icon/favicon.png">
+    </div>
+</ion-header>
+ 
+<ion-content>
+    <div class="center">
+
+        <div heading-column-lr>
+            <h1 big-heading> Inicio</h1>
+            <h2 style="outline: none;" routerLink="/registro" small-heading>Registrar</h2>
+        </div>
+       
+        <ion-label style="text-align: justify;">
+           Bienvenido a nuestra aplicación mobile con una amplia cantidad de tienda registradas donde encontrará un amplio surtido de productos. <br>
+           Por favor inicie sesión para poder continuar. 
+        </ion-label>
+     
+        <ion-item transparent> 
+            <ion-icon slot="start" name="person-outline"></ion-icon>
+            <ion-input placeholder="User" type="text"></ion-input>
+        </ion-item>
+
+        <ion-item transparent> 
+            <ion-icon slot="start" name="lock-closed-outline"></ion-icon>
+            <ion-input placeholder="Contraseña" type="password"></ion-input>
+        </ion-item>
+        <ion-label class="forget-password">Contraseña olvidada</ion-label>
+        <div linespace></div>
+        <ion-button color="primary" class="ion-button-class" shape="round" fill="solid" size="large" expand="block">Ingresar</ion-button>
+        <ion-label class="ion-text-center">No tienes cuenta? <a class="link-button" style="text-decoration: none;" routerLink="/registro">Registrar</a></ion-label>
+    
+    </div>
+</ion-content>
