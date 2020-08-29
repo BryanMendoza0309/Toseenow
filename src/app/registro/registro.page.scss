@@ -38,6 +38,7 @@
 [big-heading]{
     font-family: "Heebo-Regular" !important;
     font-size:15px !important;
+    color: var(--theme-black);
     
 }
 
@@ -45,7 +46,7 @@
     font-family: "Heebo-Bold" !important;
     margin-left:auto;
     padding-right: 40px;
-    color: var(--theme-black);
+    color: var(--theme-danger);
     font-size: 25px;
 }
 
