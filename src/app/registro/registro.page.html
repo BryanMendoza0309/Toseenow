@@ -14,27 +14,27 @@
         <label > Ingrese todos los datos para registrarse.</label>
         <ion-item transparent> 
             <ion-icon slot="start" name="person-outline" color="danger"></ion-icon>
-            <ion-input placeholder="User" type="text"></ion-input>
+            <ion-input [(ngModel)]="user.nombre" placeholder="User" type="text"></ion-input>
         </ion-item>
 
         <ion-item transparent> 
           <ion-icon slot="start" name="mail-outline" color="danger"></ion-icon>
-          <ion-input placeholder="E-mail@example.com" type="text"></ion-input>
+          <ion-input [(ngModel)]="user.email" placeholder="E-mail@example.com" type="text"></ion-input>
       </ion-item>
 
         <ion-item transparent> 
             <ion-icon slot="start" name="lock-closed-outline" color="danger"></ion-icon>
-            <ion-input placeholder="Contraseña" type="password"></ion-input>
+            <ion-input [(ngModel)]="user.password" placeholder="Contraseña" type="password"></ion-input>
             <ion-icon slot="end" name="eye-outline"></ion-icon>
         </ion-item>
 
         <ion-item transparent> 
           <ion-icon slot="start" name="lock-open-outline" color="danger"></ion-icon>
-          <ion-input placeholder="Confirmar Contraseña" type="password"></ion-input>
+          <ion-input [(ngModel)]="user.passwordConf" placeholder="Confirmar Contraseña" type="password"></ion-input>
           <ion-icon slot="end" name="eye-outline"></ion-icon>
         </ion-item>
         <div linespace></div>
         <div linespace></div>
-        <ion-button color="primary" class="ion-button-class" shape="round" fill="solid" size="large" expand="block" color="dark">Registrarse</ion-button>
+        <ion-button (click)="addUsuario($event)" color="primary" class="ion-button-class" shape="round" fill="solid" size="large" expand="block" color="dark">Registrarse</ion-button>
     </div>
 </ion-content>
