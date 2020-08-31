@@ -5,43 +5,64 @@
  <app-menu></app-menu>
 
 <ion-content>
-  <div style="margin-right: 50px; margin-left: 80px; margin-top: 15px; margin-bottom: 15px;">
+  <!--<div style="margin-right: 50px; margin-left: 80px; margin-top: 15px; margin-bottom: 15px;">
   <ion-item  lines="none">
     <ion-icon name="pricetags" slot="start" color="danger"></ion-icon>
    <h1><ion-label color="danger">Categorías </ion-label></h1>
  </ion-item>
-</div>
+</div>-->
+
 <ion-grid>
+  
   <ion-row>
-    <ion-col size="6">
+    
+    <ion-col size="6" >
 <ion-card >
  
-    <img height="100%" width="100%"  src="assets/img/camise.png">
-  
-<ion-chip Color="danger">Ropa<ion-icon name="pricetag" color="danger"></ion-icon></ion-chip>
+    <img height="100%" width="100%"  src="assets/img/camisa.png">
+  <label><ion-icon name="pricetag" color="danger"></ion-icon>  Ropa</label>
+
 </ion-card>
     </ion-col>
-    <ion-col size="6">
+    <ion-col size="6" >
       <ion-card>
        
           <img height="100%" width="100%"  src="assets/img/calzado.png">
-        
-        <ion-chip color="danger">Calzado<ion-icon name="pricetag" color="danger"></ion-icon></ion-chip>
+          <label><ion-icon name="pricetag" color="danger"></ion-icon>  Calzado</label>
+        <!--<ion-chip color="danger">Calzado<ion-icon name="pricetag" color="danger"></ion-icon></ion-chip>-->
       </ion-card>
     </ion-col>
-    <ion-col size="6">
+    <ion-col size="6" >
       <ion-card >
           <img height="100%" width="100%"  src="assets/img/comida.png">
-        
-        <ion-chip color="danger">Alimentos<ion-icon name="pricetag" color="danger"></ion-icon></ion-chip>
+          <label><ion-icon name="pricetag" color="danger"></ion-icon>  Productos Perecibles</label>
+       
       </ion-card>
     </ion-col>
-    <ion-col size="6">
+    <ion-col size="6" >
       <ion-card >
           <img height="100%" width="100%"  src="assets/img/supermercado.png">
-        <ion-chip color="danger">Variedad<ion-icon name="pricetag" color="danger"></ion-icon></ion-chip>
+          <label><ion-icon name="pricetag" color="danger"></ion-icon>  Productos no Perecibles</label>
+        
       </ion-card>
     </ion-col>
+    <ion-col size="6" >
+      <ion-card >
+          <img height="100%" width="100%"  src="assets/img/food.png">
+          <label><ion-icon name="pricetag" color="danger"></ion-icon>  Comidas</label>
+        
+      </ion-card>
+    </ion-col>
+    <ion-col size="6" >
+      <ion-card >
+          <img height="100%" width="100%"  src="assets/img/farmacia.png">
+          <label><ion-icon name="pricetag" color="danger"></ion-icon>  Farmacias</label>
+       
+      </ion-card>
+    </ion-col>
+  
   </ion-row>
+
 </ion-grid>
+
 </ion-content>
