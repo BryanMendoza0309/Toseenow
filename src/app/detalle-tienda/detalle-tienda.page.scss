@@ -1,7 +1,13 @@
 .fondo2{
-    --ion-background-color: #eb445a!important;  
+    --ion-background-color: var(--ion-color-dark) !important; 
+    
 }
 
-ion-searchbar{
-    color: var(--ion-color-dark);
+.ion-searchbar{
+    color: var(--ion-color-danger) !important;
+    --icon-color: var(--ion-color-danger) !important;
+    --background: var(--ion-color-primary-contrast);
+    --border-radius: 20px;
+
 }
+
