@@ -11,5 +11,5 @@ export class CategoriasPage implements OnInit {
 
   ngOnInit() {
   }
-
+ 
 }

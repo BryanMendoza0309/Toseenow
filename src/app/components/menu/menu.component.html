@@ -1,3 +1,5 @@
+
+
 <ion-menu side="start" menuId="first" contentId="principal" class="cl">
   <ion-header>
     <ion-toolbar color="dark" style="padding-bottom: 100px;">
@@ -7,7 +9,7 @@
   <ion-content >
     <ion-list >
      
-     <ion-item  lines="none">
+     <ion-item [routerLink]="['../inicio/']"   lines="none">
      <ion-icon name="home" slot="start" color="danger"></ion-icon>
       <ion-label color="danger"> Home</ion-label>
       <ion-icon slot="end" name="chevron-forward" color="danger"></ion-icon>
@@ -17,7 +19,7 @@
        <ion-label color="danger">Tiendas </ion-label>
        <ion-icon slot="end" name="chevron-forward" color="danger"></ion-icon>
       </ion-item>
-       <ion-item  lines="none">
+       <ion-item   [routerLink]="['../categorias/']"  lines="none">
          <ion-icon name="pricetags" slot="start" color="danger"></ion-icon>
         <ion-label color="danger">Categorías </ion-label>
         <ion-icon slot="end" name="chevron-forward" color="danger"></ion-icon>
