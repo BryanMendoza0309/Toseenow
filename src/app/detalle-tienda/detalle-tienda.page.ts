@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./detalle-tienda.page.scss'],
 })
 export class DetalleTiendaPage implements OnInit {
-
+  buscar:boolean= true;
   constructor() { }
 
   ngOnInit() {
+  }
+
+  aparece(){
+    this.buscar=!this.buscar;
   }
 
 }

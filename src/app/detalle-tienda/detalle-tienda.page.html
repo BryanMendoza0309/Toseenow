@@ -16,27 +16,34 @@
     </ion-item>  
   </ion-toolbar>
 </ion-header-->
+<ng-template #get>
 
-<ion-header>
-  <app-header></app-header>
- </ion-header>
- <app-menu></app-menu>
+  <ion-header>
+  <ion-toolbar>
+    <ion-item>
+      <ion-searchbar color="dark" placeholder="Buscar Producto" style="font-family: 'Times New Roman', Times, serif;"  ></ion-searchbar>
+    </ion-item>
+  </ion-toolbar>
+</ion-header>
+  
+</ng-template>
+
+<div *ngIf="buscar else get">
+  <ion-header>
+    <app-header></app-header>
+   </ion-header>
+   <app-menu></app-menu>
+</div>
+
 
 
 <ion-content>
 
-  <ion-fab vertical="top" horizontal="start" edge slot="fixed">
-    <ion-fab-button>
-      <ion-icon name="settings"></ion-icon>
-    </ion-fab-button>
-    <ion-fab-list side="end">
-      <ion-searchbar placeholder="Buscar Producto"></ion-searchbar>
-    </ion-fab-list>
-  </ion-fab>
+ 
 
-  <ion-fab vertical="top" horizontal="end" slot="fixed">
+  <ion-fab (click)="aparece()" vertical="bottom" horizontal="end" slot="fixed">
     <ion-fab-button>
-      <ion-icon name="add"></ion-icon>
+      <ion-icon name="search-outline"></ion-icon>
     </ion-fab-button>
   </ion-fab>
  
