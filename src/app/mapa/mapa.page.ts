@@ -22,11 +22,11 @@ export class MapaPage implements OnInit {
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v11',
     zoom: 15,
-    center: [-77.04,38.907]
+    center: [longituded,latituded]
     });
 
     var marker = new mapboxgl.Marker()
-.setLngLat([-77.04, 38.907])
+.setLngLat([longituded, latituded])
 .addTo(map);
 
     map.on('load', function(){
