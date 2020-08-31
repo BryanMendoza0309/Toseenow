@@ -22,6 +22,12 @@ const routes: Routes = [
     path: 'mapa',
     loadChildren: () => import('./mapa/mapa.module').then( m => m.MapaPageModule)
   },
+  
+
+  {
+    path: 'mapa',
+    loadChildren: () => import('./mapa/mapa.module').then( m => m.MapaPageModule)
+  },
   {
     path: 'detalle-tienda',
     loadChildren: () => import('./detalle-tienda/detalle-tienda.module').then( m => m.DetalleTiendaPageModule)
@@ -37,3 +43,8 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
+
+
+
+
