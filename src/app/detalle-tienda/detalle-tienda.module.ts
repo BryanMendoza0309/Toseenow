@@ -7,16 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { DetalleTiendaPageRoutingModule } from './detalle-tienda-routing.module';
 
 import { DetalleTiendaPage } from './detalle-tienda.page';
-import { MenuComponent } from '../components/menu/menu.component';
-import { HeaderComponent } from '../components/header/header.component';
-
+import { ComponentsModule } from '../components/components.module';
+ 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    DetalleTiendaPageRoutingModule
+    DetalleTiendaPageRoutingModule,
+    ComponentsModule
   ],
-  declarations: [DetalleTiendaPage, MenuComponent, HeaderComponent]
+  declarations: [DetalleTiendaPage]
 })
 export class DetalleTiendaPageModule {}

@@ -16,6 +16,8 @@
     </ion-item>  
   </ion-toolbar>
 </ion-header-->
+
+
 <ng-template #get>
 
   <ion-header class="fondo2">
@@ -27,10 +29,8 @@
 </ng-template>
 
 <div *ngIf="buscar else get">
-  <ion-header>
     <app-header></app-header>
-   </ion-header>
-   <app-menu></app-menu>
+    <app-menu></app-menu>
 </div>
 
 
