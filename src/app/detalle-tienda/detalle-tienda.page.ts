@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetalleTiendaPage implements OnInit {
   buscar:boolean= true;
+  tienda:boolean=true;
   constructor() { }
 
   ngOnInit() {
@@ -14,6 +15,7 @@ export class DetalleTiendaPage implements OnInit {
 
   aparece(){
     this.buscar=!this.buscar;
+    this.tienda=!this.tienda;
   }
 
 }
