@@ -21,13 +21,13 @@ export class MapaPage implements OnInit {
     var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v11',
-    zoom: 15,
+    zoom: 17,
     center: [longituded,latituded]
     });
 
     var marker = new mapboxgl.Marker()
-.setLngLat([longituded, latituded])
-.addTo(map);
+    .setLngLat([longituded, latituded])
+    .addTo(map);
 
     map.on('load', function(){
       map.loadImage(
@@ -51,11 +51,21 @@ map.addSource('places', {
     },
     'geometry':{
       'type': 'Point',
-    'coordinates': [-77.007481, 38.876516]
+    'coordinates': [longituded+0.001,latituded+0.001]
     }
-      }
-    ]
+  },
+    {
+        'type': 'Feature',
+    'properties':{
+      'description':
+    '<strong>Truckeroo</strong><p>Truckeroo brings dozens of food trucks, live music, and games to half and M Street SE (across from Navy Yard Metro Station) today from 11:00 a.m. to 11:00 p.m.</p>'
+    },
+    'geometry':{
+    'type': 'Point',
+    'coordinates': [longituded+0.0013,latituded+0.0013]
     }
+  }
+]}
     
 })
 
@@ -67,11 +77,11 @@ map.addLayer({
   'icon-image': 'custom-marker',
   'icon-allow-overlap': true
   }
-  }); 
-}
-
-      )
-    })
+  
+      });   
+    }
+  )
+})
     map.on('mouseleave', 'places', function() {
       map.getCanvas().style.cursor = '';
       popup.remove();
